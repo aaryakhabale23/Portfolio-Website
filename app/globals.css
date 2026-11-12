@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --yt-bg: #0F0F0F;
+    --yt-surface: #181818;
+    --yt-surface-2: #272727;
+    --yt-hover: #3F3F3F;
+    --yt-border: #303030;
+    --yt-text: #F1F1F1;
+    --yt-muted: #AAAAAA;
+    --yt-red: #FF0033;
+  }
+
+  body {
+    background-color: #0F0F0F;
+    color: #F1F1F1;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* YouTube Custom Dark Scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0F0F0F;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4A4A4A;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #717171;
+  }
+}
+
+/* Custom YouTube Utilities */
+.yt-glass {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.yt-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.yt-line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Pulsing effect for live badges */
+@keyframes yt-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-yt-pulse {
+  animation: yt-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

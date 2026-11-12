@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 424" width="100%" height="100%">
+  <defs>
+    <!-- Dark tech gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0d"/>
+      <stop offset="40%" stop-color="#141419"/>
+      <stop offset="80%" stop-color="#181316"/>
+      <stop offset="100%" stop-color="#0e0a0d"/>
+    </linearGradient>
+
+    <!-- Red accent glow -->
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FF0033" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#FF0033" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FF0033" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Blue accent glow -->
+    <radialGradient id="blueGlow" cx="20%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#3EA6FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3EA6FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#22222a" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+
+    <!-- Dot matrix pattern -->
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#303038" fill-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="2560" height="424" fill="url(#bgGrad)"/>
+  
+  <!-- Grid overlay -->
+  <rect width="2560" height="424" fill="url(#grid)"/>
+  <rect width="2560" height="424" fill="url(#dots)"/>
+
+  <!-- Atmospheric Glows -->
+  <circle cx="1280" cy="212" r="550" fill="url(#redGlow)"/>
+  <circle cx="450" cy="180" r="400" fill="url(#blueGlow)"/>
+
+  <!-- Left: AI Neural Network Nodes & Computer Vision Overlay -->
+  <g opacity="0.35" transform="translate(140, 60)">
+    <line x1="60" y1="80" x2="180" y2="40" stroke="#3EA6FF" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="60" y1="80" x2="160" y2="180" stroke="#3EA6FF" stroke-width="1.5"/>
+    <line x1="180" y1="40" x2="300" y2="100" stroke="#FF0033" stroke-width="1.5"/>
+    <line x1="160" y1="180" x2="300" y2="100" stroke="#AAAAAA" stroke-width="1.5"/>
+    <line x1="300" y1="100" x2="420" y2="70" stroke="#FF0033" stroke-width="1.5"/>
+    <line x1="300" y1="100" x2="400" y2="210" stroke="#3EA6FF" stroke-width="1.5"/>
+
+    <!-- Neural circles -->
+    <circle cx="60" cy="80" r="6" fill="#3EA6FF"/>
+    <circle cx="180" cy="40" r="5" fill="#F1F1F1"/>
+    <circle cx="160" cy="180" r="7" fill="#FF0033"/>
+    <circle cx="300" cy="100" r="9" fill="#F1F1F1" stroke="#FF0033" stroke-width="2"/>
+    <circle cx="420" cy="70" r="6" fill="#3EA6FF"/>
+    <circle cx="400" cy="210" r="5" fill="#AAAAAA"/>
+
+    <!-- Bounding box overlay -->
+    <rect x="230" y="50" width="160" height="110" fill="none" stroke="#FF0033" stroke-width="1.5" stroke-dasharray="6 3"/>
+    <text x="235" y="45" font-family="monospace" font-size="11" fill="#FF0033" letter-spacing="1">OBJECT_DETECT [0.984]</text>
+  </g>
+
+  <!-- Right: Architecture Wireframe & Code Fragments -->
+  <g opacity="0.3" transform="translate(1950, 70)">
+    <!-- Wireframe card -->
+    <rect x="0" y="0" width="340" height="220" rx="8" fill="#18181f" stroke="#333340" stroke-width="1.5"/>
+    <rect x="20" y="20" width="120" height="12" rx="4" fill="#3EA6FF" fill-opacity="0.6"/>
+    <rect x="20" y="44" width="220" height="8" rx="3" fill="#444455"/>
+    <rect x="20" y="60" width="180" height="8" rx="3" fill="#333340"/>
+    
+    <rect x="20" y="90" width="90" height="60" rx="4" fill="#22222d" stroke="#FF0033" stroke-width="1"/>
+    <rect x="125" y="90" width="90" height="60" rx="4" fill="#22222d"/>
+    <rect x="230" y="90" width="90" height="60" rx="4" fill="#22222d"/>
+
+    <!-- Code lines -->
+    <text x="20" y="180" font-family="monospace" font-size="11" fill="#3EA6FF">&gt; const model = await tflite.load();</text>
+    <text x="20" y="200" font-family="monospace" font-size="11" fill="#AAAAAA">&gt; return optimizeEnergy(state, policy);</text>
+  </g>
+
+  <!-- Center Focal Branding -->
+  <g text-anchor="middle" transform="translate(1280, 212)">
+    <!-- Decorative brackets -->
+    <path d="M -560 -50 L -600 -50 L -600 50 L -560 50" fill="none" stroke="#FF0033" stroke-width="2.5" opacity="0.8"/>
+    <path d="M 560 -50 L 600 -50 L 600 50 L 560 50" fill="none" stroke="#FF0033" stroke-width="2.5" opacity="0.8"/>
+
+    <!-- Subtle badge pill -->
+    <rect x="-190" y="-88" width="380" height="30" rx="15" fill="#1e1e24" stroke="#33333e" stroke-width="1"/>
+    <text x="0" y="-68" font-family="Roboto, sans-serif" font-size="12" font-weight="700" fill="#FF0033" letter-spacing="4">
+      • AARYA KHABALE • OFFICIAL CHANNEL •
+    </text>
+
+    <!-- Main Headline -->
+    <text x="0" y="-8" font-family="Roboto, sans-serif" font-size="42" font-weight="900" fill="#F1F1F1" letter-spacing="3">
+      BUILDING PRODUCTS. SOLVING PROBLEMS. CREATING IMPACT.
+    </text>
+
+    <!-- Supporting Pillars -->
+    <text x="0" y="44" font-family="Roboto, sans-serif" font-size="18" font-weight="700" fill="#AAAAAA" letter-spacing="8">
+      PRODUCT <tspan fill="#FF0033">×</tspan> AI <tspan fill="#FF0033">×</tspan> ENGINEERING <tspan fill="#FF0033">×</tspan> LEADERSHIP
+    </text>
+
+    <!-- Minimal tech tags underneath -->
+    <text x="0" y="80" font-family="monospace" font-size="12" fill="#666677" letter-spacing="2">
+      [OFFLINE AI • EDGE INFERENCE • PRDs &amp; FIGMA • REINFORCEMENT LEARNING • COMMUNITY LEAD]
+    </text>
+  </g>
+</svg>

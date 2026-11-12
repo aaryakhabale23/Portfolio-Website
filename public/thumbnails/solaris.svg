@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="solBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141724"/>
+      <stop offset="50%" stop-color="#1f2538"/>
+      <stop offset="100%" stop-color="#0d101a"/>
+    </linearGradient>
+    <radialGradient id="solGlow" cx="72%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#solBg)"/>
+  <circle cx="860" cy="360" r="460" fill="url(#solGlow)"/>
+
+  <!-- Corporate Partnerships & Placement Visual -->
+  <g transform="translate(680, 100)">
+    <rect x="0" y="0" width="480" height="460" rx="18" fill="#181c2b" stroke="#2c334d" stroke-width="2"/>
+    
+    <rect x="30" y="40" width="420" height="170" rx="14" fill="#23293d" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="30" y="45" font-family="Roboto, sans-serif" font-size="16" font-weight="800" fill="#a5b4fc" transform="translate(20, 30)">RECRUITMENT PIPELINE</text>
+    <text x="50" y="125" font-family="Roboto, sans-serif" font-size="48" font-weight="900" fill="#818cf8">200+</text>
+    <text x="50" y="165" font-family="Roboto, sans-serif" font-size="15" fill="#e0e7ff">Candidates Evaluated &amp; Shortlisted</text>
+
+    <g transform="translate(30, 240)">
+      <rect x="0" y="0" width="420" height="170" rx="14" fill="#23293d" stroke="#6366f1" stroke-width="1.5"/>
+      <text x="20" y="35" font-family="Roboto, sans-serif" font-size="16" font-weight="800" fill="#a5b4fc">STRATEGIC ALLIANCES</text>
+      <text x="20" y="85" font-family="Roboto, sans-serif" font-size="48" font-weight="900" fill="#38bdf8">10+</text>
+      <text x="20" y="125" font-family="Roboto, sans-serif" font-size="15" fill="#e0e7ff">Hospitals &amp; Corporate Partnerships Established</text>
+    </g>
+  </g>
+
+  <!-- Left Side: Headline -->
+  <g transform="translate(80, 140)" filter="url(#shadow)">
+    <rect x="0" y="0" width="310" height="38" rx="6" fill="#6366f1" fill-opacity="0.25" stroke="#a5b4fc" stroke-width="1.5"/>
+    <text x="16" y="25" font-family="Roboto, sans-serif" font-size="14" font-weight="800" fill="#c7d2fe" letter-spacing="2">
+      🤝 SOLARIS STRATEGY &amp; OPS
+    </text>
+
+    <text x="0" y="115" font-family="Roboto, -apple-system, sans-serif" font-size="74" font-weight="900" fill="#FFFFFF" letter-spacing="1">
+      200+ CANDIDATES.
+    </text>
+    <text x="0" y="210" font-family="Roboto, -apple-system, sans-serif" font-size="74" font-weight="900" fill="#818cf8" letter-spacing="1">
+      10+ CORPORATE
+    </text>
+    <text x="0" y="305" font-family="Roboto, -apple-system, sans-serif" font-size="74" font-weight="900" fill="#FFFFFF" letter-spacing="1">
+      PARTNERSHIPS.
+    </text>
+
+    <rect x="0" y="350" width="480" height="50" rx="8" fill="#181c2b" stroke="#2c334d" stroke-width="1.5"/>
+    <text x="20" y="382" font-family="Roboto, sans-serif" font-size="17" font-weight="700" fill="#c7d2fe">
+      Operations • Talent Sourcing • Stakeholder Relations
+    </text>
+  </g>
+
+  <text x="1200" y="670" font-family="Roboto, sans-serif" font-size="20" font-weight="900" fill="#818cf8" opacity="0.6" text-anchor="end">
+    SOLARIS EXPERIENCE
+  </text>
+</svg>

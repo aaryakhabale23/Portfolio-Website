@@ -1,0 +1,9 @@
+# Place personalized MP4/WebM video files here for your case studies
+# e.g.:
+# - trailer.mp4
+# - biolens.mp4
+# - ecocontrol.mp4
+# - livix.mp4
+# - darukaa.mp4
+#
+# Then simply set `videoUrl: "/videos/biolens.mp4"` in `data/projects.ts`!
